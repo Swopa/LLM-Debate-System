@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "category": "Math",
+        "source": "Classic Number Theory (Legendre's Formula)",
+        "question": "Calculate the number of trailing zeros in the decimal representation of 2024! (2024 factorial). Explain your method using the prime factors of 10.",
+        "correct_answer": "503",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 2,
+        "category": "Physics",
+        "source": "Classical Mechanics (Statics)",
+        "question": "A uniform ladder of length L and mass M leans against a smooth (frictionless) vertical wall. The ladder makes an angle θ with the horizontal ground. The coefficient of static friction between the ladder and the rough ground is μ. Derive the mathematical inequality for the minimum angle θ required so that the ladder does not slip.",
+        "correct_answer": "tan(θ) >= 1 / (2μ)",
+        "difficulty": "Hard"
+    }
+]
