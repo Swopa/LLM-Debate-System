@@ -12,7 +12,7 @@ class RolePreference(BaseModel):
 class InitialSolution(BaseModel):
     solution_text: str = Field(description="The full detailed solution") 
     step_by_step_reasoning: str = Field(description="Numbered list of steps taken")
-    final_answer_short: str = Field(description="The concise final answer (e.g. '223')")
+    final_answer_short: str = Field(description="The concise final answer. no extra text, just answer (e.g. '223')")
     
 # --- STAGE 2: PEER REVIEW ---
 class PeerReview(BaseModel):
@@ -32,6 +32,6 @@ class FinalJudgment(BaseModel):
     winner_id: str = Field(description="Which olver won? (e.g. 'Solver 1')")
     confidence: float = Field(description="0.0 to 1.0")
     reasoning: str = Field(description="Why this solution is better than the others")
-    final_answer_rext: str = Field(description="The canonical answer to return to user")
+    final_answer_text: str = Field(description="The canonical answer to return to user")
 
 
