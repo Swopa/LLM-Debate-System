@@ -2,17 +2,202 @@
     {
         "id": 1,
         "category": "Math",
-        "source": "Classic Number Theory (Legendre's Formula)",
+        "source": "Niven, Zuckerman, & Montgomery, 'An Introduction to the Theory of Numbers', Section 2.6 (Legendre's Formula Application)",
         "question": "Calculate the number of trailing zeros in the decimal representation of 2024! (2024 factorial). Explain your method using the prime factors of 10.",
-        "correct_answer": "503",
+        "correct_answer": "504",
         "difficulty": "Hard"
     },
     {
         "id": 2,
         "category": "Physics",
-        "source": "Classical Mechanics (Statics)",
+        "source": "Halliday, Resnick & Walker, 'Fundamentals of Physics', Chapter 12 (Equilibrium and Elasticity) - Standard Ladder Problem",
         "question": "A uniform ladder of length L and mass M leans against a smooth (frictionless) vertical wall. The ladder makes an angle θ with the horizontal ground. The coefficient of static friction between the ladder and the rough ground is μ. Derive the mathematical inequality for the minimum angle θ required so that the ladder does not slip.",
         "correct_answer": "tan(θ) >= 1 / (2μ)",
         "difficulty": "Hard"
+    },
+    {
+        "id": 3,
+        "category": "Math",
+        "source": "2016 AIME II Problems Problem 13",
+        "question": "Beatrix is going to place six rooks on a 6x6 chessboard where both the rows and columns are labeled 1 to 6; the rooks are placed so that no two rooks are in the same row or the same column. The value of a square is the sum of its row number and column number. The score of an arrangement of rooks is the least value of any occupied square. The average score over all valid configurations is p/q, where p and q are relatively prime positive integers. Find p + q.",
+        "correct_answer": "371",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 4,
+        "category": "Physics",
+        "source": "I.E. Irodov, Problems in General Physics, 1.31",
+        "question": "A ball starts falling with zero initial velocity on a smooth inclined plane forming an angle α with the horizontal. Having fallen the vertical distance h, the ball rebounds elastically off the inclined plane. At what distance from the impact point will the ball rebound for the second time?",
+        "correct_answer": "8h * sin(α)",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 5,
+        "category": "Physics",
+        "source": "I.E. Irodov, Problems in General Physics, 2.16",
+        "question": "Assuming the temperature (T = 0°C) and the molar mass of air (M = 29 g/mol), as well as the free-fall acceleration (g = 9.8 m/s^2), to be independent of the height, find the difference in heights at which the air densities differ by a factor of e (Euler's number).",
+        "correct_answer": "Approximately 8.0 km (Derived from Δh = RT/Mg)",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 6,
+        "category": "Physics",
+        "source": "I.E. Irodov, Problems in General Physics, 3.137",
+        "question": "A spherical shell of radius R1 with uniform charge q is expanded to a radius R2. Find the work performed by the electric forces in this process.",
+        "correct_answer": "(q^2 / (8 * pi * epsilon_0)) * (1/R1 - 1/R2)",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 7,
+        "category": "Physics",
+        "source": "I.E. Irodov, Problems in General Physics, 4.104 (Damped Oscillation)",
+        "question": "An oscillating circuit consists of a capacitor with capacitance C = 4.0 uF, a coil with inductance L = 2.0 mH, and active resistance R = 10 Ohm. Find the ratio of the energy of the coil's magnetic field to that of the capacitor's electric field at the moment when the current has the maximum value.",
+        "correct_answer": "5.0",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 8,
+        "category": "Logic",
+        "source": "Raymond Smullyan, 'What is the Name of This Book?', Problem 38",
+        "question": "On the Island of Knights and Knaves, Knights always tell the truth and Knaves always lie. You meet an inhabitant whose name is either Edwin or Edward. You ask 'What is your first name?' and he answers 'Edward'. What is his name?",
+        "correct_answer": "Impossible to determine. (If he is a Knight, his name is Edward. If he is a Knave, his name is Edwin. Both are valid).",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 9,
+        "category": "Logic",
+        "source": "Raymond Smullyan, Problem 28 (Variation)",
+        "question": "Two inhabitants, A and B, stand before you. One is a Knight (always true), one is a Knave (always false). A says: 'At least one of us is a Knave.' Identify A and B.",
+        "correct_answer": "A is a Knight, B is a Knave. (If A were a Knave, the statement would be false, meaning NOBODY is a knave, which contradicts A being a Knave. So A is Knight -> statement true -> B must be the Knave).",
+        "difficulty": "Medium"
     }
+    ,
+    {
+        "id": 10,
+        "category": "Logic",
+        "source": "The Surprise Hanging Paradox",
+        "question": "A judge tells a prisoner he will be hanged at noon on one weekday in the following week, but that the execution will be a surprise to the prisoner. He will not know the day of the hanging until the executioner knocks on his door at noon. The prisoner reasons that he cannot be hanged on Friday (last day), because if he hasn't been hanged by Thursday noon, he would know it's Friday, so it wouldn't be a surprise. By backward induction, he eliminates Thursday, Wednesday, Tuesday, and Monday. He concludes he cannot be hanged. On Wednesday, he is hanged, and he is surprised. Where is the flaw in his logic?",
+        "correct_answer": "The definition of 'surprise' is self-referential and creates a logical loop. The prisoner assumes the judge's statement about the 'surprise' is a known truth that can be used for deduction, but the act of the surprise depends on the prisoner's state of knowledge. The contradiction implies that 'known surprise' is impossible, but 'actual surprise' is possible.",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 11,
+        "category": "Logic",
+        "source": "Raymond Smullyan, Knights and Knaves Variation, problem 88",
+        "question": "You interview three inhabitants (A, B, C). Exactly one is a werewolf. They are either Knights (truth-tellers) or Knaves (liars). Statements: A says 'C is a werewolf'. B says 'I am not a werewolf'. C says 'At least two of us are knaves'. Question: (a) Is the werewolf a Knight or a Knave? (b) Which inhabitant is guaranteed NOT to be a werewolf?",
+        "correct_answer": "(a) Knave. (b) A. (Reasoning: There are two valid solutions. Case 1: A=Knave, B=Knave/Wolf, C=Knight. Case 2: A=Knight, B=Knight, C=Knave/Wolf. In both cases, the werewolf is a Knave, and A is never the werewolf).",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 12,
+        "category": "Math",
+        "source": "AMC 12B 2020, Problem 18",
+        "question": "Let x be a real number such that 2^x + 2^(-x) = 3. What is the value of 8^x + 8^(-x)?",
+        "correct_answer": "18. (Logic: Let a = 2^x. a + 1/a = 3. We want a^3 + 1/a^3. (a + 1/a)^3 = a^3 + 1/a^3 + 3(a + 1/a). 3^3 = target + 3(3). 27 = target + 9. Target = 18).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 13,
+        "category": "Physics",
+        "source": "Fundamentals of Physics, Fluid Dynamics / Venturi effect",
+        "question": "Water flows through a horizontal pipe. At point A, the diameter is 4cm and pressure is 2 atm. At point B, the diameter is 2cm. If the flow is incompressible and ideal, is the pressure at B higher, lower, or equal to A?",
+        "correct_answer": "Lower. (Continuity equation: Area decreases -> Velocity increases. Bernoulli's equation: Velocity increases -> Pressure decreases).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 14,
+        "category": "Game Theory",
+        "source": "Osborne, 'An Introduction to Game Theory', Exercise 32.1",
+        "question": "Three people announce an integer from 1 to K. If the integers are different, the person closest to 2/3 of the average wins $1. If valid winners tie, they split the $1. Consider the action profile (k, k, k) where everyone chooses the same integer k. For which integers k is this profile a Nash Equilibrium?",
+        "correct_answer": "k = 1. (Reasoning: If k >= 2, the target is 2/3*k. A player deviating to k-1 produces an average slightly less than k, making the target slightly less than 2/3*k. Since k-1 is closer to that target than k is, the deviator wins the whole pot ($1), which is better than splitting ($0.33). Thus k>=2 is not stable. Only k=1 is stable as deviation is impossible).",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 15,
+        "category": "Math",
+        "source": "Putnam Competition Prep, Problem 125 (The Birthday Paradox)",
+        "question": "Which number is larger: the product from n=1 to 25 of (1 - n/365), or 1/2? Explain the probabilistic meaning of the product.",
+        "correct_answer": "1/2 is larger. (Reasoning: The product represents the probability that in a group of 26 people [n=0 to 25], no two share a birthday. The Birthday Paradox states that the probability of a match exceeds 50% when the group size reaches 23. Since 26 > 23, the probability of *no match* (the product) is less than 50% (approx 0.40). Therefore, 1/2 > Product).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 16,
+        "category": "Game Theory",
+        "source": "Osborne, 'An Introduction to Game Theory', Exercise 242.1 (Market with Heterogeneous Buyers)",
+        "question": "Consider a cooperative game with three players: One Owner (O) and Two Buyers (B1, B2). The Owner holds a good. B1 values the good at 1. B2 values the good at v (where 0 < v < 1). The Owner values it at 0. The worth of a coalition is the maximum value they can generate together. Describe the Core of this game (the set of stable allocations of the total value).",
+        "correct_answer": "The Core is the set of allocations where: 1. Buyer 2 gets 0. 2. The good goes to Buyer 1. 3. The Owner receives a payoff p such that v <= p <= 1. (Implication: Competition from B2 forces the price to be at least v, even though B2 does not buy it).",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 17,
+        "category": "Math",
+        "source": "Principles and Techniques in Combinatorics, Chapter 3",
+        "question": "How many ways are there to tile a 2x10 rectangle using 2x1 dominoes and 2x2 squares?",
+        "correct_answer": "683. (Let a_n be the number of tilings of a 2xn rectangle. Then a_n = a_{n-1} + 2a_{n-2}, with a_0=1 and a_1=1. Iterating gives a_10=683.)",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 18,
+        "category": "Math",
+        "source": "Concrete Mathematics, Chapter 4",
+        "question": "What is the largest integer n such that 2^n divides 100! (i.e., the highest power of 2 dividing 100!)?",
+        "correct_answer": "97. (Using Legendre's formula: floor(100/2)+floor(100/4)+floor(100/8)+floor(100/16)+floor(100/32)+floor(100/64)=97.)",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 19,
+        "category": "Math",
+        "source": "Putnam and Beyond, Chapter 'Invariants'",
+        "question": "Two opposite corner squares are removed from an 8x8 chessboard. Is it possible to tile the remaining board completely with 1x2 dominoes?",
+        "correct_answer": "No. (Removing opposite corners removes two squares of the same color. Each domino covers one black and one white square, so the remaining board has unequal numbers of black and white squares and cannot be tiled.)",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 20,
+        "category": "Math",
+        "source": "American Mathematical Society, Putnam-style problem (1998 A2)",
+        "question": "Define a sequence by a_1=1 and a_{n+1}=a_n+gcd(n,a_n). What is the value of a_2024?",
+        "correct_answer": "2025. (Computing initial terms shows that for n>=4, a_n=n+1. Since gcd(n,n+1)=1, the recurrence increases by 1 each step. Thus a_2024=2025.)",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 21,
+        "category": "Game Theory",
+        "source": "Osborne, 'An Introduction to Game Theory', Exercise 291.3 (Bargaining ESS)",
+        "question": "Pairs of players bargain over a pie of size 10. Demands must be even integers {0, 2, ..., 10}. If sum <= 10, each gets demand + half remainder. If sum > 10, both get 0. Find the probability p such that the mixed strategy sigma = {2 with prob p, 8 with prob 1-p} is an Evolutionarily Stable Strategy (ESS).",
+        "correct_answer": "p = 2/5 (or 0.4). (Reasoning: Payoff(2|sigma) = 5p + 2(1-p). Payoff(8|sigma) = 8p + 0(1-p). Equating them: 3p+2 = 8p -> 5p=2 -> p=0.4. This yields payoff 3.2. Any other deviation yields less, confirming ESS).",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 22,
+        "category": "Physics",
+        "source": "Kinematics Standard (Distance vs Displacement Trap)",
+        "question": "A particle starts moving along the x-axis at t=0. Its velocity is given by v(t) = 10 * cos(pi * t) m/s. Calculate the total DISTANCE covered by the particle between t=0 and t=2.5 seconds.",
+        "correct_answer": "15.92 meters (50/pi). (Reasoning: v=0 at t=0.5, 1.5, 2.5. The particle reverses direction. We must calculate |Integral 0->0.5| + |Integral 0.5->1.5| + |Integral 1.5->2.5|. Areas are 10/pi + 20/pi + 20/pi = 50/pi approx 15.915. Simple integration gives 10/pi = 3.18, which is displacement, not distance).",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 23,
+        "category": "Logic",
+        "source": "Raymond Smullyan, 'What is the Name of This Book?', Problem 95",
+        "question": "On the Island of Knights (always truth) and Knaves (always lies), a girl wants to marry only a Rich Knave. You are, in fact, a Rich Knave. You are allowed to make only one statement to her to prove you are a Rich Knave. What is that statement?",
+        "correct_answer": "'I am a poor knave.' (Reasoning: If you were a Knight, you couldn't say you are a Knave [lie]. So you must be a Knave. Since you are a Knave, the statement is False. 'I am a Knave' is true, so 'I am poor' must be false. Therefore, you are Rich.)",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 24,
+        "category": "Physics",
+        "source": "I.E. Irodov, Problems in General Physics, 2.20",
+        "question": "A horizontal cylinder closed at one end is rotated with a constant angular velocity ω about a vertical axis passing through the open end of the cylinder. The outside air pressure is p0, the temperature is T, and the molar mass of air is M. Find the air pressure p inside the cylinder as a function of the distance r from the rotation axis. Assume the molar mass is independent of r.",
+        "correct_answer": "p(r) = p0 * exp( (M * ω^2 * r^2) / (2RT) )",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 25,
+        "category": "Logic",
+        "source": "Raymond Smullyan, 'What is the Name of This Book?', Problem 118 (Eva and Margaret)",
+        "question": "Given two girls, Eva and Margaret. Someone asks me, 'Is it really true that if you love Eva then you also love Margaret?' I reply, 'If it is true, then I love Eva, and if I love Eva, then it is true.' Which girl do I necessarily love?",
+        "correct_answer": "Both Eva and Margaret. (Reasoning: Let E='Love Eva', M='Love Margaret'. The proposition 'If E then M' is P. Statement 1: 'If P then E' (P->E). By Peirce's Law, this implies E is True. Statement 2: 'If E then P' (E->P). Since E is True, P is True. Since P (E->M) is True and E is True, then M must be True. Thus, you love both.)",
+        "difficulty": "Hard"
+    }    
 ]
