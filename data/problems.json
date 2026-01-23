@@ -4,7 +4,7 @@
         "category": "Math",
         "source": "Niven, Zuckerman, & Montgomery, 'An Introduction to the Theory of Numbers', Section 2.6 (Legendre's Formula Application)",
         "question": "Calculate the number of trailing zeros in the decimal representation of 2024! (2024 factorial). Explain your method using the prime factors of 10.",
-        "correct_answer": "504",
+        "correct_answer": "503",
         "difficulty": "Hard"
     },
     {
